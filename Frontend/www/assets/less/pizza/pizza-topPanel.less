@@ -1,0 +1,96 @@
+
+.topPanel {
+  top:0;
+  width:100%;
+  height: @top-height;
+  padding: 20px;
+  padding-left: 120px;
+  padding-right: @rightPanel;
+  background: black;
+  color: gray;
+  position:fixed;
+  opacity: 0.8;
+
+  hr{
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+  }
+
+  span#topPanel-secondLabel, span#topPanel-thirthLabel{
+    padding-left:25px;
+  }
+
+  #topPanel-firstLabel{
+    font-size:20px;
+  }
+
+  #topPanel-secondLabel{
+    font-size:12px;
+  }
+
+  #topPanel-thirthLabel{
+    font-size:17px;
+  }
+
+  #topPanel-forthLabel a{
+    font-size:17px;
+    color:white;
+  }
+
+  div#topFlag{
+    height: @top-height;
+    width: 100px;
+    position: absolute;
+    left:10px;
+    top:0;
+    color:white;
+    background-color:  #ea862e;
+    text-align: center;
+    font-size: 33px;
+  }
+
+  div#botFlag{
+    width: 100px;
+    height: 11px;
+    top: 94px;
+    left: 10px;
+    background-size: 100px 11px;
+    position: fixed;
+  }
+
+  img{
+    transform: scale(1, -1);
+  }
+
+  button{
+    background-color: @mainColor;
+    border-radius: 0.2cm;
+    border: 1px solid @mainColor;
+    height: @top-height/3;
+    width: @top-height/1.5;
+    margin-right: 11px;
+    float:right;
+    right: 100px;
+    span{
+      color:white;
+    }
+  }
+  button:hover{
+    background-color:darken(@mainColor, 5%);
+    border-color: darken(@mainColor, 5%);
+  }
+
+  @media (max-width: 1130px){
+    #topPanel-thirthLabel{
+      display: none;
+    }
+  }
+  @media (max-width: 890px) {
+    #topPanel-secondLabel {
+      display: none;
+    }
+  }
+}
+
+

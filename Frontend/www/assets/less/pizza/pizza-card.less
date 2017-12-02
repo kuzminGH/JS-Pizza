@@ -1,10 +1,54 @@
 .pizza-card {
   img {
-    max-width: 250px;
+    max-width: 100%;
   }
 
+  .composition{
+    overflow-y: hidden;
+    height: 60px;
+  }
   h3 {
     color: @mainColor;
-    background-color: lighten(@mainColor, 45%);
+    font-weight: bolder;
+  }
+
+
+  .firstKolonka{
+    padding-left: 35px;
+  }
+  .secondKolonka{
+    float:right;
+    padding-right: 35px;
+  }
+  //.btn-default{
+  //  float:right;
+  //  background-color: @mainColor;
+  //  border-color: @mainColor;
+  //  color:white;
+  //}
+  //.btn-primary{
+  //  float:left;
+  //  background-color: @mainColor;
+  //  border-color: @mainColor;
+  //}
+  .buttonP{
+    height:inherit;
+    width:100%;
+  }
+
+  .small-button{
+    //float:left;
+    box-sizing: border-box;
+  }
+
+  .big-button{
+    float:right;
+    box-sizing: border-box;
+  }
+
+  .button{
+
+    overflow-y: hidden;
+    height: 60px;
   }
 }
